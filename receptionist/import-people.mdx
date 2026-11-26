@@ -44,7 +44,7 @@ The first row of the file must name the columns. Only **name** is required. Capi
 | availability_end (or available_to) | When that stops, such as 17:00. |
 | transfer_type | warm (introduce the caller first) or cold (put straight through). |
 | transfer_number_type | phone_number (ring their desk number) or mobile_number (ring their mobile). |
-| preferred_messaging_platform | mobile_number (messages by text) or email_address (messages by email). For a new person, leave it empty to send their messages to the catch-all only. |
+| preferred_messaging_platform | mobile_number (messages by text) or email_address (messages by email). For a new person, leave it empty to send their messages to the main contact only. |
 | description (or what_they_do) | A note on their role, for you. |
 | department | The team or teams they are in, by name ("department" is the file's word for a team). Separate several with a semicolon. The teams must already exist. |
 
@@ -70,7 +70,7 @@ A row whose name matches someone already there (capital letters do not matter) u
 - A box holding just a **dash** (-) clears that detail.
 - In the department column, a name replaces the teams that person was in. A dash takes them out of every team. An empty box leaves their teams alone.
 
-Unless the file says otherwise, a new person from the file is introduced before the call is put through, their messages go to the catch-all only, and their hours run from your earliest opening time to your latest closing time. Someone with only a mobile is rung on their mobile.
+Unless the file says otherwise, a new person from the file is introduced before the call is put through, their messages go to the main contact only, and their hours run from your earliest opening time to your latest closing time. Someone with only a mobile is rung on their mobile.
 
 Nobody is removed by an import. People not in the file stay as they are.
 
@@ -80,7 +80,7 @@ The page says how many were added and updated, for example:
 
 "From staff.csv: 7 contacts added, 2 updated. They are saved now: check them above."
 
-Here "contacts" means people. They are saved straight away. Open a few to check them, and make sure one of them is the catch-all. See [People and teams](/receptionist/people-and-teams).
+Here "contacts" means people. They are saved straight away. Open a few to check them, and make sure one of them is the main contact. See [People and teams](/receptionist/people-and-teams).
 
 <Frame>
   <img src="/images/receptionist/import-good.png" alt="The bottom of the People and teams list after an import, with the green message &quot;From new-staff.csv: 2 contacts added, 0 updated. They are saved now: check them above.&quot;" />
