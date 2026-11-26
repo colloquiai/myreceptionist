@@ -17,7 +17,7 @@ their customers. Not developers. Every page must make sense to someone who has n
 - "receptionist", never "agent" or "bot".
 - "workspace" for the account a business's receptionists live in.
 - "caller" for a person who rings.
-- "People and teams" are who callers can be put through to. "People" (side menu) are who can sign in. Keep them apart.
+- "People and teams" are who callers can be put through to. "People" (a tab of Settings) are who can sign in. Keep them apart.
 
 ## Style
 
