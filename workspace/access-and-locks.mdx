@@ -1,0 +1,124 @@
+---
+title: "Access and locks"
+description: "Choose which receptionists a Customer login can see, and lock the parts of a receptionist they must not change."
+---
+
+If you look after receptionists for other businesses, you can give each business its own login that shows only its own receptionist. You can also lock parts of that receptionist, so the business can change its opening hours, say, but not who calls are put through to.
+
+Both are set on the **People** page, which only an **Owner** can see. They apply only to people with the **Customer** role. **Owner** and **Staff** always see every receptionist and can change everything. See [People and roles](/workspace/people-and-roles) for the roles.
+
+## Choose which receptionists a person sees
+
+A person with the Customer role sees only the receptionists ticked for them. They do not see the others in the list, and cannot open them.
+
+<Steps>
+  <Step title="Open People">
+    In the side menu, click **People**.
+  </Step>
+  <Step title="Open the person's settings">
+    On the person's line, click **Change**. To set this for someone new, use the **Add a person** card instead.
+  </Step>
+  <Step title="Make sure the role is Customer">
+    **Receptionists they see** appears only when **Role** is **Customer**.
+  </Step>
+  <Step title="Tick their receptionists">
+    Under **Receptionists they see**, tick each receptionist this person should see. The hint says: "A person with the Customer role sees only the receptionists ticked here."
+  </Step>
+  <Step title="Save">
+    Click **Save**.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/workspace/change-a-customer.png" alt="A Customer's Change panel open: Receptionists they see, with Harbour Plumbing Manly ticked." />
+</Frame>
+
+The list of people shows the names of each Customer's receptionists under **Receptionists they see**, or **None yet** if none is ticked. A Customer with none ticked sees no receptionists.
+
+### What a Customer sees and can do
+
+On their own receptionists, a Customer:
+
+- can change the set-up, except the parts you have locked
+- sees the phone number, but cannot choose another one. If there is none, they see "No phone number yet. Your provider sets this up."
+- can add to and remove from the knowledge base their receptionist uses, but cannot choose or create one. If there is none, they see "No knowledge base yet. Your provider sets this up."
+- can make changes live only if they have the **May publish and delete** tick
+- cannot add or delete receptionists
+- sees only their own receptionists' calls on the **Calls** page
+- does not see **Billing**, **People**, **Activity** or **Settings** in the side menu
+
+<Frame>
+  <img src="/images/workspace/customer-voice-and-number.png" alt="The Voice and number card as a Customer sees it: the phone number is shown with no way to change it." />
+</Frame>
+
+## Lock parts of a receptionist
+
+The **What customer logins may change** card on the People page has one line for each receptionist in the workspace, and one tick box for each part of it. The card says: "For each receptionist, the steps a person with the Customer role may change. A step not ticked is shown to them but cannot be changed. Owner and Staff may change everything."
+
+A tick means a Customer **may** change that part. No tick means it is locked.
+
+The columns are named like this, and match these cards on a receptionist's page:
+
+| Column on the People page | Card on the receptionist's page |
+|---|---|
+| **The business** | [Your business](/receptionist/your-business) |
+| **Voice and phone number** | [Voice and number](/receptionist/voice-and-number) |
+| **Contacts** | [People and teams](/receptionist/people-and-teams) |
+| **Opening hours and calls** | [Opening hours](/receptionist/opening-hours) |
+| **What the receptionist says** | [What it says](/receptionist/what-it-says) |
+| **Knowledge base** | [What it knows](/receptionist/what-it-knows) |
+
+<Steps>
+  <Step title="Open People">
+    In the side menu, click **People**, then scroll to **What customer logins may change**.
+  </Step>
+  <Step title="Find the receptionist">
+    Find the receptionist's line.
+  </Step>
+  <Step title="Untick what they must not change">
+    Untick each part the Customer must not change. Tick it again to unlock it.
+  </Step>
+</Steps>
+
+Each tick saves as soon as you click it. The page says "What customer logins may change in" followed by the receptionist's name and "is saved."
+
+<Frame>
+  <img src="/images/workspace/what-customer-logins-may-change.png" alt="The What customer logins may change card, with Contacts and Knowledge base unticked for Harbour Plumbing Manly." />
+</Frame>
+
+A new receptionist starts with nothing locked.
+
+Each change is recorded on the [Activity](/workspace/activity) page, for example "Changed what customer logins may change in" the receptionist, followed by what is now locked.
+
+### Who can set locks
+
+Only an **Owner**, because only an Owner can open the People page. Locks never limit Owner or Staff.
+
+## What a Customer sees on a locked part
+
+A locked card is still shown to the Customer, so they can read it. At the top of the card it says **Your provider has locked this.**, with a padlock. Its rows cannot be opened for editing, and the card's buttons, such as adding a person or a team, are not shown.
+
+<Frame>
+  <img src="/images/workspace/customer-locked-cards.png" alt="A receptionist's page as a Customer sees it: the People and teams and What it knows cards each say &quot;Your provider has locked this.&quot;" />
+</Frame>
+
+If the **Knowledge base** column is unticked, the Customer also cannot add to or remove from the knowledge base. If they try, they are told: "This part of your receptionist is locked by your provider. Ask them to change it."
+
+A knowledge base can be shared by more than one receptionist. If any receptionist that uses it has **Knowledge base** locked, Customers cannot change that knowledge base from any receptionist.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Can I lock something for Staff?">
+    No. Locks apply only to the Customer role. Owner and Staff can always change everything.
+  </Accordion>
+  <Accordion title="Can a Customer see a receptionist that is not theirs?">
+    No. To them, it is as if it does not exist.
+  </Accordion>
+  <Accordion title="Does a lock change what the receptionist does on calls?">
+    No. A lock only stops a Customer changing that part. The receptionist keeps working as it is set up.
+  </Accordion>
+  <Accordion title="Can a Customer ever change the address emails are sent from?">
+    No. Whatever is locked or unlocked, a Customer's changes never alter the address that message emails are sent from.
+  </Accordion>
+</AccordionGroup>
