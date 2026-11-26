@@ -1,0 +1,123 @@
+---
+title: "Import people from a file"
+description: "Add or update many people at once from a spreadsheet saved as a CSV file."
+---
+
+If your receptionist needs to put callers through to a lot of people, you can add them all at once from a spreadsheet instead of one at a time. Each row of the spreadsheet becomes one person in **People and teams**.
+
+The file must be a **CSV file**. That is a spreadsheet saved in a simple format, with a comma between each box. Most spreadsheet programs can save or download a sheet "as CSV".
+
+## Where the button is
+
+The import is only on the **People and teams** page, not on the card on the receptionist's page. If the **People and teams** card is locked for you, there is no import button.
+
+<Steps>
+  <Step title="Open the People and teams page">
+    On the receptionist's page, find the **People and teams** card and press **Manage people and teams** (it reads, for example, **See all, 3 more** when some are not shown).
+  </Step>
+  <Step title="Get the example file">
+    Press **Download a sample file**. It saves a file called contacts-sample.csv with the right column names and two example people.
+  </Step>
+  <Step title="Fill in your people">
+    Open the sample in your spreadsheet program, replace the example rows with your own people, one row each, and save it as CSV.
+  </Step>
+  <Step title="Import it">
+    Press **Import from a CSV file** and choose your file. A message under the list says what happened.
+  </Step>
+</Steps>
+
+{/* SHOT: the People and teams page, top right, showing Add a person, Add a team, Import from a CSV file and Download a sample file */}
+
+## The columns
+
+The first row of the file must name the columns. Only **name** is required. Capital letters do not matter, and spaces count as underscores, so "Desk number" works as well as desk_number.
+
+| Column | What to put in it |
+|---|---|
+| name | The person's name, as callers ask for them. Required on every row. |
+| phone_number (or desk_number) | Their desk number, starting with + and the country code, like +61352468897. Spaces, brackets, dots and dashes are taken out for you. |
+| mobile_number (or mobile) | Their mobile, the same way. |
+| email_address (or email) | Their email address. |
+| availability_start (or available_from) | When calls can start being put through to them, such as 09:00. 9:00, 5pm and 5:30 PM also work. |
+| availability_end (or available_to) | When that stops, such as 17:00. |
+| transfer_type | warm (introduce the caller first) or cold (put straight through). |
+| transfer_number_type | phone_number (ring their desk number) or mobile_number (ring their mobile). |
+| preferred_messaging_platform | mobile_number (messages by text) or email_address (messages by email). For a new person, leave it empty to send their messages to the catch-all only. |
+| description (or what_they_do) | A note on their role, for you. |
+| department | The team or teams they are in, by name ("department" is the file's word for a team). Separate several with a semicolon. The teams must already exist. |
+
+Any other column is ignored, and the message after the import lists it under "Columns not used:".
+
+The sample file looks like this:
+
+```
+name,phone_number,mobile_number,email_address,availability_start,availability_end,transfer_type,transfer_number_type,preferred_messaging_platform,description,department
+Reception,+61 7 0000 0001,,reception@example.com,09:00,17:00,warm,phone_number,email_address,"Bookings, and anything that is not clearly for someone else",
+Dana Reyes,,+61 400 000 002,dana@example.com,08:00,16:00,cold,mobile_number,mobile_number,Owner. Quotes and complaints,
+```
+
+<Tip>
+Some spreadsheets remove the + from the start of a phone number. If that happens, set that column to Text in your spreadsheet and type the numbers again.
+</Tip>
+
+## People already on the list
+
+A row whose name matches someone already there (capital letters do not matter) updates that person instead of adding a new one.
+
+- An **empty box** leaves that detail as it is.
+- A box holding just a **dash** (-) clears that detail.
+- In the department column, a name replaces the teams that person was in. A dash takes them out of every team. An empty box leaves their teams alone.
+
+Unless the file says otherwise, a new person from the file is introduced before the call is put through, their messages go to the catch-all only, and their hours run from your earliest opening time to your latest closing time. Someone with only a mobile is rung on their mobile.
+
+Nobody is removed by an import. People not in the file stay as they are.
+
+## A good file
+
+The page says how many were added and updated, for example:
+
+"From staff.csv: 7 contacts added, 2 updated. They are saved now: check them above."
+
+Here "contacts" means people. They are saved straight away. Open a few to check them, and make sure one of them is the catch-all. See [People and teams](/receptionist/people-and-teams).
+
+{/* SHOT: the People and teams page after a good import, with the green message under the list */}
+
+The message can add a note:
+
+- "No department here is called “Sales”, so nobody was put in it. Add the department on the Departments tab, then import the file again." Here "department" means a team, and there is no Departments tab: add the team with **Add a team**, then import the file again. The people were still added.
+- "Columns not used: …", listing columns that were ignored.
+
+## A bad file
+
+If anything in the file is wrong, nothing at all is imported. The message lists each problem with its row number, as a spreadsheet numbers them (the column names are row 1). It shows the first 20 problems, then, for example, "…and 5 more." A problem with a column is reported under the column's name as your file writes it.
+
+{/* SHOT: the People and teams page after a bad import, with the red "Nothing was imported from bad.csv" message listing problems by row */}
+
+| The message says | What to do |
+|---|---|
+| Nothing was imported from staff.csv. Fix this in the file and try again: | The start of every bad-file message. The list follows. |
+| The first row must name the columns, and one of them must be "name". Download the sample file to see the layout. | Add a first row of column names, with a column called name. |
+| Two columns are both for phone_number. Keep one. | Two columns mean the same thing, for example "phone_number" and "desk_number". Delete one of them. |
+| A quote mark is opened and never closed, so the rows cannot be told apart. | Find the stray " in the file and remove it or close it. |
+| Row 3: No name. | Fill in the name on that row. |
+| Row 4: The same name as row 2. | Each name can appear once. Remove or rename one. |
+| Row 2: phone_number “61400000003” must start with + and the country code, like +61352468897. If a spreadsheet removed the +, set that column to Text and type it again. | Add + and the country code. The second sentence shows when the number looks as if a spreadsheet took the + off. |
+| Row 2: email “sam@example” is not an email address. | Correct the email. |
+| Row 2: available_from “9.30” is not a time. Write it like 09:00 or 17:30. | Write the time with a colon. |
+| Row 2: transfer_type “maybe” must be warm or cold. | Use one of the words listed in the message. |
+| The file has no contacts in it, only the first row. | Add at least one person under the column names. ("Contacts" here means people.) |
+| The file has 250 contacts. The most that can be imported at once is 200. | Split the file into two and import each. |
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="How many people can I import?">
+    Up to 200 in one file. For more, split them across files.
+  </Accordion>
+  <Accordion title="Can I import teams?">
+    No. Teams must be added on the page with **Add a team**. The file can then put people into them through the department column.
+  </Accordion>
+  <Accordion title="I imported the wrong file. Can I undo it?">
+    There is no undo. Remove the people you did not want, or correct them, in their panels. Nothing reaches callers until you press **Go live** or **Publish changes**.
+  </Accordion>
+</AccordionGroup>

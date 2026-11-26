@@ -1,0 +1,141 @@
+---
+title: "Plans and minutes"
+description: "Put a receptionist on a plan, change its plan, and keep an eye on the minutes it has used."
+---
+
+A plan keeps a receptionist answering calls. Each receptionist has its own plan, and each plan includes a number of call minutes a month. This page shows how to choose or change a receptionist's plan, and how to read the minutes it has used.
+
+Plans are chosen on the **Billing** page, which only an **Owner** of the workspace can see. See [Billing](/billing/overview).
+
+## The plans on offer
+
+The **Plans** section of the Billing page shows each plan as a card. It says: "Each price is for one receptionist, each month. The plan starts when you choose it."
+
+Each card shows:
+
+- the plan's name
+- its price, followed by **a month**
+- the minutes it includes, followed by **minutes**
+- the price of each minute after those, followed by **a minute after**
+- a button that says **Choose** followed by the plan's name
+
+Plans and prices can change. The Billing page always shows the current ones.
+
+{/* SHOT: the Billing page, the Plans section, showing the plan cards with their Choose buttons */}
+
+## Putting a receptionist on a plan
+
+A receptionist can be put on a plan once it has gone live. Until then, the Plans section says "No receptionist is live yet. Go live first, then choose its plan." and the cards have no buttons. See [Go live](/receptionist/go-live).
+
+You also need a payment method on the workspace. The plan is charged to it.
+
+<Steps>
+  <Step title="Open Billing">
+    In the side menu, click **Billing**.
+  </Step>
+  <Step title="Find the receptionist">
+    Under **Your receptionists**, find the receptionist. A receptionist with no plan shows **No plan yet** and a **Choose a plan** button. Click **Choose a plan**. The page moves down to the plans.
+  </Step>
+  <Step title="Check who you are choosing for">
+    If the workspace has more than one live receptionist, a **Choosing for** list appears beside the **Plans** heading. Check it shows the right receptionist. Change it if you need to.
+  </Step>
+  <Step title="Choose the plan">
+    On the plan you want, click its **Choose** button.
+  </Step>
+  <Step title="Confirm">
+    Your browser asks you to confirm. It starts "Put" followed by the receptionist's name and "on this plan?", repeats the plan's name, price and minutes, and ends "It starts now and is charged with this workspace’s payment method." Accept it to go ahead, or cancel it to stop. Nothing is changed if you cancel.
+  </Step>
+</Steps>
+
+{/* SHOT: the Billing page with the browser's confirmation box asking "Put ... on this plan?" */}
+
+When it has worked, a green line at the top of the Plans section says the receptionist's name and plan, for example: "Bayside Dental Receptionist is on the [plan name] plan. It is charged with this workspace's payment method."
+
+The plan starts straight away.
+
+## Changing a receptionist's plan
+
+<Steps>
+  <Step title="Press Change plan">
+    On the Billing page, under **Your receptionists**, click **Change plan** beside the receptionist.
+  </Step>
+  <Step title="Choose the new plan">
+    The page moves down to the plans. The plan the receptionist is on now is marked **Current plan** and has no button. Click the **Choose** button on the new plan.
+  </Step>
+  <Step title="Confirm">
+    Confirm in the box your browser shows.
+  </Step>
+</Steps>
+
+When it has worked, the green line says, for example: "Bayside Dental Receptionist is now on the [plan name] plan."
+
+{/* SHOT: the Billing page, the Plans section with one card marked "Current plan" and the others showing Choose buttons */}
+
+## Cancelling a plan
+
+There is no button on the Billing page to cancel a plan. To cancel, press **Manage billing** on the Billing page and cancel on the payments page that opens.
+
+## What each receptionist shows
+
+Under **Your receptionists**, each receptionist that has gone live has a line with its name and its plan.
+
+The plan is shown by its name. It may be followed by a word about its state:
+
+| What you see | What it means |
+|---|---|
+| **Active** | The plan is running. |
+| **Free trial** | The plan is in a free trial. |
+| **Payment overdue** | A payment for the plan is late. Check your card with **Manage billing**. |
+| **Unpaid** | The plan has not been paid. Check your card with **Manage billing**. |
+| **Waiting for payment** | The plan is waiting for its first payment. |
+| **Paused** | The plan is paused. |
+| **No plan yet** | The receptionist is not on a plan. |
+| **Could not check right now** | The plan could not be read just then. Reload the page later. |
+
+A plan that is due to end shows the date, for example "Active, ends 30 Dec 2026".
+
+## Minutes used
+
+Beside a receptionist on a plan, a thin bar shows how many of its included minutes it has used. Above the bar it says the minutes used "of" the minutes included, followed by **minutes**.
+
+Under the figure is one short line:
+
+- **Resets** and a date: the day the count of minutes starts again.
+- **All used. Extra minutes are charged**: the receptionist has used all the minutes its plan includes. It keeps answering calls. Each minute after that is charged at the price shown on the plan's card.
+
+Part of a minute counts as a whole minute.
+
+The figure is not updated while you watch. A call that has just finished may not be counted yet.
+
+{/* SHOT: the Billing page, Your receptionists, one receptionist on a plan with its minutes bar and the "Resets" date */}
+
+A receptionist that is not on a plan may show test minutes instead. See [Test minutes](/billing/test-minutes).
+
+## When a plan cannot be set
+
+If the plan could not be set, a red line at the top of the Plans section says why. Nothing is changed.
+
+| Message | What to do |
+|---|---|
+| "The payment did not go through, so the plan was not changed. Check the payment method with Manage billing, then try again." | Press **Manage billing**, check or update your card, then choose the plan again. |
+| "That receptionist is already on a plan. Reload the page, then change its plan." | Someone else may have chosen a plan at the same time. Reload the page, then use **Change plan**. |
+| "That receptionist is not live yet. Press Go live first, then choose its plan." | Put the receptionist live first. See [Go live](/receptionist/go-live). |
+| "Choose one of the plans in the list." | The plan you chose is no longer offered. Reload the page and choose again. |
+| A message saying the plan could not be set just now, and to try again in a few minutes | Wait a few minutes and try again. |
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Does each receptionist need its own plan?">
+    Yes. The Plans section says: "Each price is for one receptionist, each month."
+  </Accordion>
+  <Accordion title="What happens when a receptionist uses all its minutes?">
+    It keeps answering calls. The Billing page says **All used. Extra minutes are charged**, and each extra minute is charged at the price on the plan's card.
+  </Accordion>
+  <Accordion title="Why doesn't my receptionist appear under Your receptionists?">
+    Only receptionists that have gone live are shown. If none has, the page says "No receptionist is live yet. Plans show here once one is."
+  </Accordion>
+  <Accordion title="I just finished a call. Why haven't the minutes gone up?">
+    A call is not counted the moment it ends. Look again a little later.
+  </Accordion>
+</AccordionGroup>

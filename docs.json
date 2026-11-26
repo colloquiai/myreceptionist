@@ -1,72 +1,101 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "My Receptionist",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#c2410c",
+    "light": "#f56138",
+    "dark": "#9a3412"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Get started",
         "pages": [
           "index",
-          "quickstart"
+          "get-started/quickstart",
+          "get-started/sign-up",
+          "get-started/sign-in",
+          "get-started/find-your-way"
+        ]
+      },
+      {
+        "group": "Set up a receptionist",
+        "pages": [
+          "receptionist/create",
+          "receptionist/the-receptionist-page",
+          "receptionist/your-business",
+          "receptionist/voice-and-number",
+          "receptionist/people-and-teams",
+          "receptionist/import-people",
+          "receptionist/opening-hours",
+          "receptionist/what-it-says",
+          "receptionist/what-it-knows",
+          "receptionist/things-to-fix",
+          "receptionist/go-live"
+        ]
+      },
+      {
+        "group": "On a call",
+        "pages": [
+          "on-a-call/how-a-call-goes",
+          "on-a-call/putting-calls-through",
+          "on-a-call/taking-messages",
+          "on-a-call/closed-and-public-holidays",
+          "on-a-call/answering-questions",
+          "on-a-call/call-recording"
+        ]
+      },
+      {
+        "group": "Calls",
+        "pages": [
+          "calls/call-history"
+        ]
+      },
+      {
+        "group": "Billing",
+        "pages": [
+          "billing/overview",
+          "billing/plans-and-minutes",
+          "billing/test-minutes"
+        ]
+      },
+      {
+        "group": "Your workspace",
+        "pages": [
+          "workspace/people-and-roles",
+          "workspace/access-and-locks",
+          "workspace/activity",
+          "workspace/branding",
+          "workspace/several-workspaces"
+        ]
+      },
+      {
+        "group": "Your account",
+        "pages": [
+          "account/password",
+          "account/two-step-sign-in",
+          "account/confirm-it-is-you"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "help/troubleshooting",
+          "help/faq",
+          "help/glossary"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
       "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "view"
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

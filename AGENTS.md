@@ -1,37 +1,38 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> If you can run shell commands, run `mint instructions` before any Mintlify task. It prints current guidance for this CLI version. Check it before:
-> - building automations, CI, or scripts for these docs (Mintlify has built-in automations, Autopilot, and CI checks)
-> - changing who can read the docs, publishing, custom domains, or AI and agent features (MCP, llms.txt, skill.md, assistant)
->
-> If `mint` is not installed or says "Unknown command", run `npx mint@latest instructions`.
-> For broader Mintlify product knowledge, install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+- The help site for My Receptionist, built on [Mintlify](https://mintlify.com).
+- Pages are MDX files with YAML frontmatter. The menu and site settings are in `docs.json`.
+- Preview with `mint dev`. Check with `mint validate` and `mint broken-links` before every commit.
+- Commits to `main` publish the site.
+
+## Who reads it
+
+Ordinary, non-technical people: business owners and their staff, and partners who run My Receptionist for
+their customers. Not developers. Every page must make sense to someone who has never seen the product.
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- "receptionist", never "agent" or "bot".
+- "workspace" for the account a business's receptionists live in.
+- "caller" for a person who rings.
+- "People and teams" are who callers can be put through to. "People" (side menu) are who can sign in. Keep them apart.
 
-## Style preferences
+## Style
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Australian English. Plain, short sentences. Second person. Active voice.
+- Start with what the thing is for, in terms of a phone call. Then numbered steps.
+- No technical words. If the screen uses one, explain it in a few plain words.
+- Sentence case for headings.
+- Bold for anything on screen: click **Go live**.
+- Quote on-screen words exactly as the application shows them.
+- Screenshots wherever the reader needs to see the screen.
+- No em dashes, no exclamation marks, no marketing language.
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- No prices or plan names: the Billing page shows them.
+- Do not name the companies or technology behind the product.
+- Do not document administrator-only pages.
+- Do not describe anything that is not built.

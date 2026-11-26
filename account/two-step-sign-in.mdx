@@ -1,0 +1,102 @@
+---
+title: "Two-step sign-in"
+description: "Switch on two-step sign-in so signing in also needs a code from your phone, and keep your recovery codes safe."
+---
+
+Two-step sign-in protects your workspace, and the receptionist that answers your calls, if someone learns your password. When it is on, signing in takes two steps: your password (or Google or Microsoft), then a 6-digit code from an app on your phone. Someone with only your password cannot get in.
+
+You need an **authenticator app** on your phone. This is an app that shows 6-digit codes that keep changing, such as Google Authenticator, Microsoft Authenticator or 1Password.
+
+{/* SHOT: the "Two-step sign-in" page with two-step sign-in off, showing the Switch on button */}
+
+## Switch it on
+
+<Steps>
+  <Step title="Open your account page">
+    Click your email address at the bottom of the side menu. On the **Two-step sign-in** card, click **Set up two-step sign-in**.
+  </Step>
+  <Step title="Click Switch on">
+    You may be asked to confirm it is you first. Do that, then click **Switch on** again. See [Confirm it is you](/account/confirm-it-is-you).
+  </Step>
+  <Step title="Scan the code with your phone">
+    The page **Set up two-step sign-in** shows a square QR code. Open your authenticator app, choose to add an account, and scan it.
+
+    If your app cannot scan, use the setup key the page shows under "Cannot scan it? Type this setup key into the app instead:". Type it into the app.
+  </Step>
+  <Step title="Type the code from the app">
+    Your app now shows a 6-digit code for My Receptionist. Type it in **Code** and click **Switch on**.
+  </Step>
+  <Step title="Save your recovery codes">
+    The page says "Done. Save your recovery codes now: they are shown only this once." and lists them under **Save your recovery codes**. Keep them somewhere safe, such as a password manager. If you lose your phone, each one lets you sign in once.
+  </Step>
+</Steps>
+
+{/* SHOT: the "Set up two-step sign-in" page showing the QR code, the setup key and the Code box */}
+
+An email with the subject **Two-step sign-in is on** is sent to your address.
+
+If you stop part way, nothing changes: two-step sign-in stays off. A set-up you do not finish within 15 minutes is dropped, and so is one left when you sign out. Click **Cancel** to stop on purpose.
+
+<Warning>
+The recovery codes are shown only once. If you lose your phone and do not have them, you cannot sign in by yourself.
+</Warning>
+
+{/* SHOT: the "Save your recovery codes" card listing the codes, under the "Two-step sign-in" page that says it is on */}
+
+## Signing in with two-step sign-in
+
+<Steps>
+  <Step title="Sign in as usual">
+    Type your email address and password, or click **Continue with Google** or **Continue with Microsoft**.
+  </Step>
+  <Step title="Type the code from your app">
+    The **Two-step sign-in** page asks: "Open your authenticator app and type the 6-digit code it shows." Type the code in **Code** and click **Sign in**.
+  </Step>
+</Steps>
+
+You have 10 minutes to type the code. After that the page says "Signing in took too long. Sign in again."
+
+{/* SHOT: the "Two-step sign-in" page shown while signing in, with the Code box and "Use a recovery code" */}
+
+### If you do not have your phone
+
+Click **Use a recovery code**, type one of your saved recovery codes in **Recovery code**, and click **Sign in**. Each code works once. Cross it off when you have used it.
+
+If you are running low, sign in and make new ones (see below).
+
+## Make new recovery codes
+
+On your account page, click **Manage two-step sign-in**, then **Make new recovery codes**. Confirm it is you if asked, then click it again. The page says "New recovery codes made. The old ones no longer work." and shows the new list once. Save it.
+
+## Switch it off
+
+On your account page, click **Manage two-step sign-in**, then **Switch off**. Confirm it is you if asked, then click it again. The page says "Two-step sign-in is off." An email with the subject **Two-step sign-in is off** is sent to your address.
+
+## What can go wrong
+
+| What you see | What it means and what to do |
+|---|---|
+| "That code is not right. Check that the time on your phone is correct, and try again." | When switching on, the code did not match. Check that the time on your phone is correct, then type the code the app shows now. |
+| "That code is not right. Try again." | When signing in, the code did not match. Type the code your app shows now. |
+| "That recovery code is not right, or it has been used already." | Check for typing mistakes, or use another of your codes. |
+| "Too many wrong codes. Sign in again." | 5 wrong codes in one sign-in end it. Start again from the sign-in page. |
+| "The code is shown only for a few minutes after you confirm it is you." | You came back to an unfinished set-up. Click **Show a new code**, confirm it is you, then scan the new code. |
+
+If many wrong codes are typed within an hour, signing in to your account is locked for a while. An email with the subject **Wrong sign-in codes** is sent to your address. If you did not type those codes, someone knows your password or has your Google or Microsoft account. Reset your password with **Forgot your password?** on the sign-in page. That also lifts the lock. Then check your **Sign-in methods**. See [Your password](/account/password).
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="I have a new phone.">
+    While you still have the old phone or your recovery codes, sign in, switch two-step sign-in off, then switch it on again and scan the new code with the new phone.
+  </Accordion>
+  <Accordion title="I lost my phone and my recovery codes.">
+    You cannot sign in by yourself. Contact support and ask for two-step sign-in to be reset for your account. When it is reset, you get an email saying **Two-step sign-in was reset**, and you can switch it on again.
+  </Accordion>
+  <Accordion title="Does two-step sign-in work with Google or Microsoft sign-in?">
+    Yes. After Google or Microsoft signs you in, you are still asked for the code from your app.
+  </Accordion>
+  <Accordion title="Can I use the same code twice?">
+    No. Each code from your app works once. Wait for the next one.
+  </Accordion>
+</AccordionGroup>
