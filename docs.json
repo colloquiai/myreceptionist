@@ -58,7 +58,7 @@
         "pages": [
           "billing/overview",
           "billing/plans-and-minutes",
-          "billing/test-minutes"
+          "billing/free-minutes"
         ]
       },
       {
@@ -101,6 +101,10 @@
     {
       "source": "/workspace/activity",
       "destination": "/workspace/people-and-roles"
+    },
+    {
+      "source": "/billing/test-minutes",
+      "destination": "/billing/free-minutes"
     }
   ]
 }
